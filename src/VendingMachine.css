@@ -1,0 +1,40 @@
+.VendingMachine {
+	width: 600px;
+	height: 600px;
+	background-size: cover;
+	background-position: top center;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	flex-direction: column;
+}
+
+.VendingMachine nav {
+	display: flex;
+	background-color: rgb(46, 53, 60);
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 20px;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.VendingMachine nav a {
+	text-align: center;
+	color: aliceblue;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 10px 0;
+	width: 100%;
+	height: 20px;
+}
+
+.VendingMachine nav a:hover {
+	background-color: slategray;
+}
+
+.VendingMachine h2 {
+	color: aliceblue;
+}

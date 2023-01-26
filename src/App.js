@@ -1,26 +1,31 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Navbar";
+import Item from "./Item";
+import VendingMachine from "./VendingMachine";
+import ToiletPaper from "./images/toilet-paper.png";
+import Mask from "./images/mask.png";
+import HandSanitizer from "./images/hand-sanitizer.png";
+import NoSocialLife from "./images/no-social-life.png";
+import Machine from "./images/vending-machine.png";
 
 function App() {
 	return (
 		<main className="App">
 			<BrowserRouter>
-				<Navbar />
 				<Route exact path="/">
-					<h1>Covid Vending Machine</h1>
+					<VendingMachine />
 				</Route>
 				<Route exact path="/toilet-paper">
-					<h1>Toilet Paper</h1>
+					<Item name="Toilet Paper" image={ToiletPaper} />
 				</Route>
 				<Route exact path="/mask">
-					<h1>Mask</h1>
+					<Item name="Mask" image={Mask} />
 				</Route>
 				<Route exact path="/hand-sanitizer">
-					<h1>Hand Sanitizer</h1>
+					<Item name="Hand Sanitizer" image={HandSanitizer} />
 				</Route>
 				<Route exact path="/no-social-life">
-					<h1>No Social Life</h1>
+					<Item name="No Social Life" image={NoSocialLife} />
 				</Route>
 			</BrowserRouter>
 		</main>
